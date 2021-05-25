@@ -11,7 +11,7 @@ const SignInForm = () => {
     const [formIsValid, setFormIsValid] = useState();
 
     useEffect(()=>{
-        setFormIsValid(email.includes('@') && pass.trim().length > 8);
+        setFormIsValid(email.includes('@') && pass.trim().length > 8);      //Password must have atleast 8 character
     },[email,pass])
 
 
